@@ -1,0 +1,118 @@
+.texts-container {
+    padding: 30px 30px;
+    border: solid 1px #eff3f4;
+    margin-bottom: 20px;
+    width: 550px;
+    overflow: hidden;
+    height: auto;
+    background-color: #f7f9f9;
+    border-radius: 20px;
+
+    .edit-form {
+        display: flex;
+    }
+
+    .edit-input {
+        height: 45px;
+        width: 300px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        border-radius: 30px;
+        border: solid #eff3f4;
+        padding-left: 15px;
+    }
+
+    input:focus {
+        outline: 2px solid #1d9bf0;
+    }
+
+    button {
+        width: 40px;
+        padding-top: 4px;
+        font-size: 18px;
+        background-color: #1d9bf0;
+        border-radius: 40px;
+        border: none;
+        color: white;
+        transition: all 0.3s
+    }
+
+    button:hover {
+        background-color: #1a8cd9;
+    }
+
+    .edit-button{
+        margin-left: 400px;
+        margin-right: 5px;
+    }
+
+    .edit-button-svg path {
+        stroke: white;
+    }
+
+    .update-button {
+        width: 70px;
+        padding-bottom: 4px;
+        position: relative;
+        top: 40px;
+        margin-left: 25px;
+    }
+
+    .cancel-button {
+        width: 70px;
+        margin-left: 13px;
+        padding-bottom: 4px;
+        position: relative;
+        top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .texts-container {
+        width: 260px;
+        padding: 10px 10px;
+        font-size: 14px;
+
+        p {
+            margin: 5px;
+        }
+
+        button {
+            width: 30px;
+            font-size: 15px;
+        }
+
+        .edit-input {
+            width: 180px;
+            height: 35px;
+            font-size: 15px;
+        }
+
+        .edit-button {
+            margin-left: 165px;
+        }
+
+        //update and cancel button
+        .edit-buttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .update-button {
+            width: 50px;
+            font-size: 12px;
+            margin-left: 0;
+            top: 5px;
+        }
+
+        .cancel-button {
+            width: 50px;
+            font-size: 12px;
+            margin-left: 0;
+            margin-top: 5px;
+            top: 5px;
+        }
+    }
+}
